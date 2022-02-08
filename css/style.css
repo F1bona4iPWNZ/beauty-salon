@@ -32,7 +32,7 @@ nav{
     text-align: center;
     
 }
-.menu li{
+.menu__ul li{
     display: inline-flex;
     margin: 36px 29px 22px 0px;
 }
@@ -56,12 +56,11 @@ nav{
     min-height: 75px;
 }
 /* ________title_______*/
-.title__container{
-    height: 600px;
-    margin-bottom: 40px;
-}
 .title__wrap{
     
+}
+.title__container {
+margin-bottom: 600px;
 }
 .title__img{
     position: relative;
@@ -80,17 +79,17 @@ nav{
     max-width: 720px;
 }
 .title__article{
-    position: relative;
+    position: absolute;
     background: #FDEBD3;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
     z-index: 125;
     background-size: cover;
     background-repeat: no-repeat;
     left: 45px;
-    top: 134px;
+    top: 170px;
     padding: 88px 0px 40px 48px;
-    height: auto;
-    width: 100%;
+    height: 400px;
+    width: 99%;
     max-width: 1000px;
     background-clip: padding-box;
     
@@ -105,9 +104,6 @@ nav{
 }
 .title__article__descr{
 font-family: 'Comfortaa', cursive;
-font-weight: 300;
-font-size: 20px;
-line-height: 33px;
 text-align: center;
 }
 .border__article__descr{
@@ -142,6 +138,7 @@ color: rgba(27, 27, 27, 1);
     margin: 0 -5px;
 }
 .servises__wrapper{
+    height: 520px;
 }
 /*style for all titles*/
 .servises__title, .advantages__title, .our__team-title,.reviews-title,.products__title,.contacts__title{
@@ -154,6 +151,9 @@ color: rgba(27, 27, 27, 1);
 .servises__cosmetology,.servises__nails,.servises__haircare{
     padding: 0px 5px;
     flex: 0 1 25%;
+}
+.servises__spa{
+    padding-left: 5px;
 }
 /*.servises__cosmetology,.servises__nails,.servises__haircare,.servises__spa{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
@@ -173,7 +173,7 @@ padding: 50px 0 40px 0;
     text-align: center;
     width: 235.27px;
     height: 245.17px;
-    margin-top: -100px;
+    margin-top: 265px;
     position: absolute;
     margin-left: 15px;
     transition: 2s;
@@ -195,6 +195,9 @@ padding: 50px 0 40px 0;
     float: right;
 }
 /*-----------advantages---*/
+.advantages{
+    margin-bottom: 200px;
+}
 .advantages__wrapper{
     background-image: url(../img/advantages/advantages_bcgr.png);
     height: 330px;
@@ -202,7 +205,8 @@ padding: 50px 0 40px 0;
 .advantages__experience, .advantages__cosmetics,.advantages__location,.advantages__qualified-specialist{
     background: #FDEBD3;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
-    width: 232px;
+    max-width: 232px;
+    width: 100%;
     height: 243px;
     margin: 3% 0;
     transition: 1s linear;
@@ -215,6 +219,7 @@ padding: 50px 0 40px 0;
     display: flex;
     justify-content: space-around;
     margin: 0 -5px;
+    flex-wrap: wrap;
 }
 .advantages__img{
     padding: 0px 5px;
@@ -241,6 +246,9 @@ padding: 50px 0 40px 0;
 .advantages__inner{
     padding: 0px 5px;
     flex: 0 1 25%;
+}
+.our__team{
+    margin: 230px 0 0 0;
 }
 .our__team-container{
 
@@ -309,6 +317,7 @@ background: rgba(255, 255, 255, 0.4);
 }
 .reviews__container{
         display: flex;
+        flex-wrap: wrap;    
         justify-content: center;
         align-items: flex-end;
     }
@@ -412,10 +421,11 @@ padding: 20px 0;
   /*-----products---*/
   .products__wrapper{
       display: flex;
+      flex-wrap: nowrap;
       background-image: url(../img/our-products/products-bcgr.png);
-      background-repeat: no-repeat;
+      
       background-size: cover;
-      height: 700px;
+     
       backdrop-filter: blur(8px); 
   }
 .products_img-container{
@@ -434,19 +444,17 @@ padding: 20px 0;
     z-index: 5;
 }
 .products__descr{
-    background: rgba(255, 255, 255, 0.3);
-backdrop-filter: blur(25.6931px);
-/* Note: backdrop-filter has minimal browser support */
-margin: 230px 0 120px -660px;
-padding-left: 200px;
-z-index: 2;
-padding: 60px 0 57px 600px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(25.6931px);
+    z-index: 2;
+    margin: 100px 0px 200px 0;
 }
 .products__bodycare-title{
     align-items: center;
     text-transform: uppercase;
     color: #000000;
     font-size: 36px;
+    padding: 100px 0px 0 61px;
 }
 .products__bodycare-descr{
     line-height: 24px;
@@ -456,12 +464,12 @@ padding: 60px 0 57px 600px;
     padding: 26px 60px 47px 0;
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
+    margin: 0 0px 0 61px;
 }
 .products__green-bcgr img{
     width: 100%;
     max-width: 443px;
     height: 764px;
-    margin-left: 236px;
     margin-top: -46px;
 }
 .products__gel-img img{
@@ -469,28 +477,23 @@ padding: 60px 0 57px 600px;
     max-width: 686px;
     height: 638px;
     margin-top: -624px;
-    margin-left: 125px;
 }
 .products__bodycare-button{
     max-width: 257px;
     max-height: 156px;
     width: 100%; 
     color: rgba(27, 27, 27, 1);
+    margin: 0 0px 0 50px;
 }
 /*----contacts-------------------*/
 .contacts{
-    margin-top: 130px;
+    margin-top: 20px;
 }
 .contacts__container{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     background-image: url(../img/contacts/contacts-bcgr.png);
 }
-.contacts__information{
-    color: #BBD4CE;
-    padding: 177px 380px 0 100px;
-}
-
 
 /*----form------------------*/
 .contacts__form{
@@ -510,7 +513,7 @@ form{
 form legend{
     font-size: 26px;
     text-transform: uppercase;
-    padding: 80px 162px 50px 162px;
+    padding: 80px 130px 50px 130px;
 }
 [type="text"], [type="tel"],[type="submit"],select option,#servises{
     border: 0.75px solid #000000;
@@ -534,7 +537,7 @@ form label{
     font-size: 20px;
 }
 fieldset{
-    width: 450px;
+    max-width: 450px;
     border: none;
     text-align: center;
 }
@@ -545,6 +548,11 @@ fieldset input,form select{
 }
 select{
     background-color:transparent;
+}
+.contacts__information{
+    color: #BBD4CE;
+        padding-top: 6%;
+    
 }
 .contacts__address,.contacts__schedule,.contacts__email,.contacts__phone{
 font-size: 28px;
@@ -586,10 +594,10 @@ color: #C7C7C7;
 /*-----footer----*/
 .social-networks ul{
     display: flex;
+    justify-content: center;
 }
 .social-networks{
     margin-top: -72px;
-    margin-left: 45%;
 }
 .social-networks li{
     padding: 55px 10px 0 10px;
