@@ -3,7 +3,6 @@
     font-family: 'Crimson Pro', serif;
 }
 body{
-    max-width: 1520px;
     background: rgba(27, 27, 27, 1);
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,6 +20,12 @@ li{
 }
 ul img{
     margin-top: 20px;
+}
+.advantages, header, .products,.advantages, .contacts, footer{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1488px;
+    padding: 0 24px;
 }
 /*font-family: 'Comfortaa', cursive;
 font-family: 'Crimson Pro', serif;
@@ -74,6 +79,8 @@ margin-bottom: 600px;
     background-size: cover;
 }
 .title__img img{
+    right: 200px;
+    position: absolute;
     height: auto;
     width: 100%;
     max-width: 720px;
@@ -85,7 +92,7 @@ margin-bottom: 600px;
     z-index: 125;
     background-size: cover;
     background-repeat: no-repeat;
-    left: 45px;
+    left: 175px;
     top: 170px;
     padding: 88px 0px 40px 48px;
     height: 400px;
@@ -195,12 +202,11 @@ padding: 50px 0 40px 0;
     float: right;
 }
 /*-----------advantages---*/
-.advantages{
-    margin-bottom: 200px;
-}
 .advantages__wrapper{
     background-image: url(../img/advantages/advantages_bcgr.png);
-    height: 330px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 .advantages__experience, .advantages__cosmetics,.advantages__location,.advantages__qualified-specialist{
     background: #FDEBD3;
@@ -484,6 +490,10 @@ padding: 20px 0;
     width: 100%; 
     color: rgba(27, 27, 27, 1);
     margin: 0 0px 0 50px;
+}
+.products__bodycare-button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color:rgba(27, 27, 27, 1) ;
 }
 /*----contacts-------------------*/
 .contacts{
